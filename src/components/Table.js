@@ -57,7 +57,7 @@ export default function ControlledSelectionServerPaginationGrid() {
     { field: 'name', headerName: 'Name', width: 400, sortable: false, headerClassName: 'header', },
     { field: 'email', headerName: 'Email', width: 400, sortable: false, headerClassName: 'header', },
     { field: 'role', headerName: 'Role', width: 400, sortable: false, headerClassName: 'header', },
-    { field: 'action', headerName: 'Actions', width: 435, sortable: false, headerClassName: 'header',
+    { field: 'action', headerName: 'Actions', width: 400, sortable: false, headerClassName: 'header',
       renderCell: (params) => {
         const deleteThis = () => deleteOne(params)
         return (
@@ -104,7 +104,7 @@ export default function ControlledSelectionServerPaginationGrid() {
   return (
     <Box 
       sx={{
-        height: 650, 
+        height: 600, 
         width: '100%',
         '& .header': {
           backgroundColor: '#1976d2',
