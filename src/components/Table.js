@@ -54,10 +54,10 @@ export default function ControlledSelectionServerPaginationGrid() {
   }
   const columns = [
     { field: 'id', headerName: 'ID', hide: true },
-    { field: 'name', headerName: 'Name', width: 200, sortable: false, headerClassName: 'header', },
-    { field: 'email', headerName: 'Email', width: 400, sortable: false, headerClassName: 'header', },
-    { field: 'role', headerName: 'Role', width: 200, sortable: false, headerClassName: 'header', },
-    { field: 'action', headerName: 'Actions', width: 200, sortable: false, headerClassName: 'header',
+    { field: 'name', headerName: 'Name', flex: 2, sortable: false, headerClassName: 'header', },
+    { field: 'email', headerName: 'Email', flex: 4, sortable: false, headerClassName: 'header', },
+    { field: 'role', headerName: 'Role', flex: 2, sortable: false, headerClassName: 'header', },
+    { field: 'action', headerName: 'Actions', flex: 2, sortable: false, headerClassName: 'header',
       renderCell: (params) => {
         const deleteThis = () => deleteOne(params)
         return (
