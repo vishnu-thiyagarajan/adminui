@@ -104,7 +104,7 @@ export default function ControlledSelectionServerPaginationGrid() {
   return (
     <Box 
       sx={{
-        height: 625, 
+        height: 670, 
         width: '100%',
         '& .header': {
           backgroundColor: '#1976d2',
@@ -117,7 +117,6 @@ export default function ControlledSelectionServerPaginationGrid() {
         helperText="Clear search to list all users.."
         onKeyDown={searchOnEnter}
         value={srch} onChange={handleSrch}
-        sx={{mb:2}}
         variant="outlined" 
         fullWidth
         autoFocus
